@@ -11,4 +11,7 @@
 '''
 
 a,b=map(int,input().split())
-print("{:} {:}".format(a//b,a%b))
+if b!=0:
+    print("{:} {:}".format(int(a/b),a-int(a/b)*b)) #如果用a//b 和a%b就会报错 用divmod(a,b)结果也不对
+else:
+    pass

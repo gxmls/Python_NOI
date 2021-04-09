@@ -9,4 +9,7 @@
 '''
 
 a,b,c=map(int,input().split())
-print((a+b)//c)
+if -10000<a and b and c<10000 and c!=0:
+    print(int((a+b)/c)) #如果用(a+b)//c 结果不对
+else:
+    pass

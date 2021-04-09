@@ -11,4 +11,5 @@ R = 1/(1/r1 + 1/r2)
 '''
 
 r1,r2=map(float,input().split())
-print("{:.2f}".format(1/(1/r1+1/r2)))
+R=1/round((1/r1+1/r2),5) #如果此处用 R = 1/(1/r1+1/r2)就会报错，可能原因是不确定尾数
+print("{:.2f}".format(R))

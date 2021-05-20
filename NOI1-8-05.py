@@ -28,15 +28,12 @@ def MaxRow(ls):
         maxrow.append(max(row))
     return maxrow
 def MinColumn(ls):
-    ls_column=[]
     mincolumn=[]
     for column in range(len(ls)):
         c=[]
         for row in range(len(ls[column])):
             c.append(ls[row][column])
-        ls_column.append(c)
-    for column in ls_column:
-        mincolumn.append(min(column))
+        mincolumn.append(min(c)) #可以减少循环，得到一列计算一列最小值，不需要再额外创建一个以列为单位的列表
     return mincolumn
 
 ls=[]
